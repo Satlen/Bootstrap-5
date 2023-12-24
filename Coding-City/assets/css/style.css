@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Redressed&display=swap');
+
+.redressed {
+    font-family: 'Redressed', cursive;
+}
+.merriweather {
+    font-family: "Merriweather", serif;
+}
+.cc-navbar {
+    font-family: Merriweather, serif;
+    background-color: rgba(0,0,0,0.55);
+    box-shadow: 1px 1px 3px rgba(255,255,255,0.55);
+    z-index: 999;
+} 
+.btn-order {
+    color: var(--bs-teal);
+    border-color: var(--bs-teal);
+    transition: .5s;
+}
+.btn-order:hover,
+.btn-order:active {
+    background-color: var(--bs-teal);
+    color: #fff;
+}
+.cc-navbar .nav-link {
+border-bottom: 1px solid transparent;
+transition: padding-bottom .4s ease-in-out, border-color .4s ease;
+}
+/* La bordure doit etre déja là avant que je ne puisse agir sur sa couleur. */
+.cc-navbar .nav-link:hover {
+padding-bottom: 20px;
+border-color: var(--bs-teal);    
+}
+.banner,
+.order-form {
+    height: 800px;
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0.2)), url(../img/banner.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+.order-form{
+    height: 500px;
+}
+/* C' est à cause du background-attachment qui est fixed que quand on scroll, ça produit un effet de parallaxe. Le center a été mentionné 2 fois à cause des 2 background*/
+.banner .banner-text {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.new-menu {
+    height: 1300px;
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0.2)), url(../img/drinks-2.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+.footer .nav a {
+    color: #999!important;
+}
